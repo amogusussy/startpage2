@@ -1,0 +1,123 @@
+:root {
+    --main-bg: #282828dc;
+    --main-fg: #fbf0c9;
+    --border: #fe8019a4;
+}
+
+body, html {
+    background-color: var(--main-bg);
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+* {
+    box-sizing: border-box;
+}
+
+.bg-image {
+    background-image: var(--image);
+    filter: blur(4px);
+    -webkit-filter: blur(8px);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    color: var(--main-fg);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#time {
+    font-size: 50px;
+    margin: 0px;
+}
+
+#date {
+    font-size: 25px;
+    margin: 0px;
+}
+
+.search input#bar{
+    /* border-radius: 5px; */
+    padding: 2px;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    width: 350px;
+    background-color: var(--main-bg);
+    border: var(--border) 2px solid;
+    margin: 15px;
+    color: var(--main-fg);
+    margin-right: 0px;
+} .search input:focus {
+    outline: none;
+}
+.search input#btn {
+    font-size: 20px;
+    padding: 2px;
+    background-color: var(--main-bg);
+    border: var(--border) 2px solid;
+    border-left: 0px solid var(--border);
+    height: 40px;
+    margin-left: 0px;
+}
+
+button {
+    padding: 3px 8px;
+    background-color: var(--main-bg);
+    color: var(--main-fg);
+    border: 1px var(--border) solid;
+    margin: 2px;
+}
+
+.widget-container {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+}
+.widget-container a {
+    text-decoration: none;
+}
+
+.widget p {
+    text-decoration: none;
+    color: inherit;
+    color: var(--main-fg);
+}
+
+.widget {
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 130px;
+    height: 120px;
+    margin: 10px;
+    background-color: var(--main-bg);
+    border: 1px solid var(--border);
+}
+
+.widget:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+#weather {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--main-fg);
+    background-color: var(--main-bg);
+    padding: 10px;
+    border-radius: 13px;
+    text-align: center;
+    border: 2px solid var(--border);
+}

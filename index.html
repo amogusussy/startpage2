@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="main()">
+    <div class="bg-image"></div>
+    <div class="content">
+        <div class="time">
+            <p id="time"></p>
+            <p id="date"></p>
+        </div>
+        <div class="search">
+            <form id="action" action="https://librex.beparanoid.de/search.php">
+                <input type="text" name="q" id="bar" autocomplete="off" placeholder="Search..." autofocus>
+            </form>
+        </div>
+        <div class="engines">
+            <button onclick="changeEngine(this.value)" value="google">g</button>
+            <button onclick="changeEngine(this.value)" value="duckduckgo">d</button>
+            <button onclick="changeEngine(this.value)" value="searx">l</button>
+            <button onclick="changeEngine(this.value)" value="librex">s</button>
+        </div>
+        <div class="widget-container">
+            <a href="https://reddit.com">
+                <div class="widget" onclick="link('reddit')">
+                    <p>reddit</p>
+                </div>
+            </a>
+            <a href="https://github.com">
+                <div class="widget" onclick="link('github')">
+                    <p href="https://github.com">github</p>
+                </div>
+            </a>
+            <a href="https://youtube.com">
+                <div class="widget" onclick="link('youtube')">
+                    <p href="https://youtube.com">youtube</p>
+                </div>
+            </a>
+            <a href="https://stackOverflow.com">
+                <div class="widget" onclick="link('stackoverflow')">
+                    <p href="https://stackOverflow.com">stackOverflow</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="weather">
+        <div id="description"></div>
+        <h1 id="temp"></h1>
+        <div id="location"></div>
+    </div>
+    
+</body>
+</html>
