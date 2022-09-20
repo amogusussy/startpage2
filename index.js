@@ -4,7 +4,6 @@ function bg(){
     "cabin.png",
     "classroom.jpg",
     "comfy-room.jpg",
-    "feh_094854_000001_cabin.png",
     "forest2.jpg",
     "forest-hut.png",
     "forest.jpg",
